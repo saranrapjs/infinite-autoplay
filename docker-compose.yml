@@ -1,0 +1,8 @@
+# docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.0.1-germanium
+
+version: "2"
+services:
+  selenium:
+    image: "selenium/standalone-chrome:3.0.1-germanium"
+    ports:
+     - "4444:4444"
